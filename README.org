@@ -9,3 +9,8 @@ git clone https://github.com/taylormonacelli/ourarkansas
 cd ourarkansas
 open clipboard.html
 #+end_example
+
+** resources
+
++ https://wickydesign.com/how-to-add-timestamps-to-embedded-youtube-videos/
++ https://youtu.be/RBYJTop1e-g
