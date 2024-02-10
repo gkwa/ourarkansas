@@ -10,6 +10,16 @@ cd ourarkansas
 open clipboard.html
 #+end_example
 
+** create-remix
+
+This uses typescript
+#+begin_example
+mkdir -p my-remix-app
+cd my-remix-app
+time npx create-remix@latest . --show-install-output --no-motion --git-init --no-color --yes --template remix-run/remix/templates/remix
+ls .git/
+#+end_example
+
 ** resources
 
 + https://youtu.be/RBYJTop1e-g
