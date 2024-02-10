@@ -1,7 +1,11 @@
 * ourarkansas
 
-This is a description of my ourarkansas.
+** purpose: learn a workflow to take notes on remix crash course
 
-** Usage
+** usage
 
-To use my project, run this command: ./ourarkansas --verbose
+#+begin_example
+git clone https://github.com/taylormonacelli/ourarkansas
+cd ourarkansas
+open clipboard.html
+#+end_example
