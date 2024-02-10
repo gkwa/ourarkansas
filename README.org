@@ -12,7 +12,7 @@ open clipboard.html
 
 ** resources
 
++ https://youtu.be/RBYJTop1e-g
 + https://github.com/academind/remix-practical-guide-course-resources/tree/main/Code/02%20Essentials
 + https://remix.run/docs/en/main/styling/css#surfacing-styles
 + https://wickydesign.com/how-to-add-timestamps-to-embedded-youtube-videos/
-+ https://youtu.be/RBYJTop1e-g
