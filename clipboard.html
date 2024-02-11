@@ -16,19 +16,18 @@
 
 	.grid-container {
         display: grid;
-        grid-template-columns: 60px 70px auto; 
-         
-		
+        grid-template-columns: 60px 90px auto;
     }
 
     .grid-item {
-         
-         
         padding: 0px;
     }
 
 	.grid-item-seconds { text-align: right; }
-	.grid-item-timestamp { text-align: right; }
+	.grid-item-timestamp {
+		text-align: right;
+		padding-left: 1ch;
+	}
 	.grid-item-notes {
 		text-align: left;
 		padding-left: 1ch;
@@ -47,7 +46,7 @@
     });
   }
   function setCurrentTime(slideNum) {
-	var object = [ 3928 , 3905 , 3898 , 3861 , 3821 , 3773 , 3729 , 3683 , 3669 , 3576 , 3549 , 3482 , 3414 , 3407 , 3350 , 3286 , 3255 , 3231 , 3205 , 3194 , 3147 , 3128 , 3121 , 3028 , 3000 , 2997 , 2925 , 2903 , 2844 , 2809 , 2770 , 2747 , 2734 , 2721 , 2674 , 2644 , 2623 , 2602 , 2568 , 2542 , 2514 , 2483 , 2437 , 2421 , 2408 , 2384 , 2363 , 2324 , 2243 , 2241 , 2221 , 2197 , 2193 , 2168 , 2140 , 1913 , 1875 , 1846 , 1798 , 1782 , 1769 , 701 ];
+	var object = [ 4964 , 4933 , 4837 , 4772 , 4681 , 4676 , 4559 , 4495 , 4451 , 4392 , 4243 , 4204 , 4178 , 4119 , 4069 , 4048 , 4033 , 4008 , 3981 , 3951 , 3948 , 3928 , 3905 , 3898 , 3861 , 3821 , 3773 , 3729 , 3683 , 3669 , 3576 , 3549 , 3482 , 3414 , 3407 , 3350 , 3286 , 3255 , 3231 , 3205 , 3194 , 3147 , 3128 , 3121 , 3028 , 3000 , 2997 , 2925 , 2903 , 2844 , 2809 , 2770 , 2747 , 2734 , 2721 , 2674 , 2644 , 2623 , 2602 , 2568 , 2542 , 2514 , 2483 , 2437 , 2421 , 2408 , 2384 , 2363 , 2324 , 2243 , 2241 , 2221 , 2197 , 2193 , 2168 , 2140 , 1913 , 1875 , 1846 , 1798 , 1782 , 1769 , 701 ];
     player.seekTo(object[slideNum]);
   }
 </script>
@@ -61,10 +60,262 @@
 
 
 <div class="grid-item-seconds">
+	<a href="https://youtu.be/RBYJTop1e-g?t=4964" target="_blank">4964s</a>
+</div>
+<div class="grid-item-timestamp">
+	<a href="javascript:void(0);" onclick="setCurrentTime( 0 )">1h22m44s</a>
+</div>
+<div class="grid-item-notes">
+	useNavigation hook: prevent submitting form twice
+</div>
+
+
+
+<div class="grid-item-seconds">
+	<a href="https://youtu.be/RBYJTop1e-g?t=4933" target="_blank">4933s</a>
+</div>
+<div class="grid-item-timestamp">
+	<a href="javascript:void(0);" onclick="setCurrentTime( 1 )">1h22m13s</a>
+</div>
+<div class="grid-item-notes">
+	more features available in remix Form element
+</div>
+
+
+
+<div class="grid-item-seconds">
+	<a href="https://youtu.be/RBYJTop1e-g?t=4837" target="_blank">4837s</a>
+</div>
+<div class="grid-item-timestamp">
+	<a href="javascript:void(0);" onclick="setCurrentTime( 2 )">1h20m37s</a>
+</div>
+<div class="grid-item-notes">
+	stay in SPA using Form element
+</div>
+
+
+
+<div class="grid-item-seconds">
+	<a href="https://youtu.be/RBYJTop1e-g?t=4772" target="_blank">4772s</a>
+</div>
+<div class="grid-item-timestamp">
+	<a href="javascript:void(0);" onclick="setCurrentTime( 3 )">1h19m32s</a>
+</div>
+<div class="grid-item-notes">
+	introducing the Form element (as opposed to the HTML form element)
+</div>
+
+
+
+<div class="grid-item-seconds">
+	<a href="https://youtu.be/RBYJTop1e-g?t=4681" target="_blank">4681s</a>
+</div>
+<div class="grid-item-timestamp">
+	<a href="javascript:void(0);" onclick="setCurrentTime( 4 )">1h18m1s</a>
+</div>
+<div class="grid-item-notes">
+	how to keep SPA without redirecting to a new page
+</div>
+
+
+
+<div class="grid-item-seconds">
+	<a href="https://youtu.be/RBYJTop1e-g?t=4676" target="_blank">4676s</a>
+</div>
+<div class="grid-item-timestamp">
+	<a href="javascript:void(0);" onclick="setCurrentTime( 5 )">1h17m56s</a>
+</div>
+<div class="grid-item-notes">
+	adding form post validation
+</div>
+
+
+
+<div class="grid-item-seconds">
+	<a href="https://youtu.be/RBYJTop1e-g?t=4559" target="_blank">4559s</a>
+</div>
+<div class="grid-item-timestamp">
+	<a href="javascript:void(0);" onclick="setCurrentTime( 6 )">1h15m59s</a>
+</div>
+<div class="grid-item-notes">
+	loader: after posting a new note, then remix will automatcally update client ui with new set of notes, no need to manually re-fetch notes list and hydrate client ui
+</div>
+
+
+
+<div class="grid-item-seconds">
+	<a href="https://youtu.be/RBYJTop1e-g?t=4495" target="_blank">4495s</a>
+</div>
+<div class="grid-item-timestamp">
+	<a href="javascript:void(0);" onclick="setCurrentTime( 7 )">1h14m55s</a>
+</div>
+<div class="grid-item-notes">
+	<NotesList notes={notes} />
+</div>
+
+
+
+<div class="grid-item-seconds">
+	<a href="https://youtu.be/RBYJTop1e-g?t=4451" target="_blank">4451s</a>
+</div>
+<div class="grid-item-timestamp">
+	<a href="javascript:void(0);" onclick="setCurrentTime( 8 )">1h14m11s</a>
+</div>
+<div class="grid-item-notes">
+	special hook provided by remix: userLoaderData() hook
+</div>
+
+
+
+<div class="grid-item-seconds">
+	<a href="https://youtu.be/RBYJTop1e-g?t=4392" target="_blank">4392s</a>
+</div>
+<div class="grid-item-timestamp">
+	<a href="javascript:void(0);" onclick="setCurrentTime( 9 )">1h13m12s</a>
+</div>
+<div class="grid-item-notes">
+	first intro to the json() function to return data from loader()
+</div>
+
+
+
+<div class="grid-item-seconds">
+	<a href="https://youtu.be/RBYJTop1e-g?t=4243" target="_blank">4243s</a>
+</div>
+<div class="grid-item-timestamp">
+	<a href="javascript:void(0);" onclick="setCurrentTime( 10 )">1h10m43s</a>
+</div>
+<div class="grid-item-notes">
+	you only need to return the data from the loader()
+</div>
+
+
+
+<div class="grid-item-seconds">
+	<a href="https://youtu.be/RBYJTop1e-g?t=4204" target="_blank">4204s</a>
+</div>
+<div class="grid-item-timestamp">
+	<a href="javascript:void(0);" onclick="setCurrentTime( 11 )">1h10m4s</a>
+</div>
+<div class="grid-item-notes">
+	loader() can be async or non-async
+</div>
+
+
+
+<div class="grid-item-seconds">
+	<a href="https://youtu.be/RBYJTop1e-g?t=4178" target="_blank">4178s</a>
+</div>
+<div class="grid-item-timestamp">
+	<a href="javascript:void(0);" onclick="setCurrentTime( 12 )">1h9m38s</a>
+</div>
+<div class="grid-item-notes">
+	loader() is a backend function run on server-side
+</div>
+
+
+
+<div class="grid-item-seconds">
+	<a href="https://youtu.be/RBYJTop1e-g?t=4119" target="_blank">4119s</a>
+</div>
+<div class="grid-item-timestamp">
+	<a href="javascript:void(0);" onclick="setCurrentTime( 13 )">1h8m39s</a>
+</div>
+<div class="grid-item-notes">
+	introduction to the loader() function, loader() will be triggered whenever a GET request is made on the notes route
+</div>
+
+
+
+<div class="grid-item-seconds">
+	<a href="https://youtu.be/RBYJTop1e-g?t=4069" target="_blank">4069s</a>
+</div>
+<div class="grid-item-timestamp">
+	<a href="javascript:void(0);" onclick="setCurrentTime( 14 )">1h7m49s</a>
+</div>
+<div class="grid-item-notes">
+	notesList needs to fetch the notes from json before being displayed below the notes form
+</div>
+
+
+
+<div class="grid-item-seconds">
+	<a href="https://youtu.be/RBYJTop1e-g?t=4048" target="_blank">4048s</a>
+</div>
+<div class="grid-item-timestamp">
+	<a href="javascript:void(0);" onclick="setCurrentTime( 15 )">1h7m28s</a>
+</div>
+<div class="grid-item-notes">
+	there are route components and non-route components
+</div>
+
+
+
+<div class="grid-item-seconds">
+	<a href="https://youtu.be/RBYJTop1e-g?t=4033" target="_blank">4033s</a>
+</div>
+<div class="grid-item-timestamp">
+	<a href="javascript:void(0);" onclick="setCurrentTime( 16 )">1h7m13s</a>
+</div>
+<div class="grid-item-notes">
+	example of the ...notesLinks() spread operator
+</div>
+
+
+
+<div class="grid-item-seconds">
+	<a href="https://youtu.be/RBYJTop1e-g?t=4008" target="_blank">4008s</a>
+</div>
+<div class="grid-item-timestamp">
+	<a href="javascript:void(0);" onclick="setCurrentTime( 17 )">1h6m48s</a>
+</div>
+<div class="grid-item-notes">
+	prevent links() collision by aliasing the function name
+</div>
+
+
+
+<div class="grid-item-seconds">
+	<a href="https://youtu.be/RBYJTop1e-g?t=3981" target="_blank">3981s</a>
+</div>
+<div class="grid-item-timestamp">
+	<a href="javascript:void(0);" onclick="setCurrentTime( 18 )">1h6m21s</a>
+</div>
+<div class="grid-item-notes">
+	example of "surfacing links"
+</div>
+
+
+
+<div class="grid-item-seconds">
+	<a href="https://youtu.be/RBYJTop1e-g?t=3951" target="_blank">3951s</a>
+</div>
+<div class="grid-item-timestamp">
+	<a href="javascript:void(0);" onclick="setCurrentTime( 19 )">1h5m51s</a>
+</div>
+<div class="grid-item-notes">
+	what the heck is a prop? here is an example
+</div>
+
+
+
+<div class="grid-item-seconds">
+	<a href="https://youtu.be/RBYJTop1e-g?t=3948" target="_blank">3948s</a>
+</div>
+<div class="grid-item-timestamp">
+	<a href="javascript:void(0);" onclick="setCurrentTime( 20 )">1h5m48s</a>
+</div>
+<div class="grid-item-notes">
+	NoteList introduction
+</div>
+
+
+
+<div class="grid-item-seconds">
 	<a href="https://youtu.be/RBYJTop1e-g?t=3928" target="_blank">3928s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 0 )">1h5m28s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 21 )">1h5m28s</a>
 </div>
 <div class="grid-item-notes">
 	to display our pre-existing notes, we'll add notelist.jsx component.  See here for notelist.jsx <a href="https://github.com/academind/remix-practical-guide-course-resources/tree/main/Code/02%20Essentials/08%20Returning%20%26%20Using%20Fetched%20Data/app/components">https://github.com/academind/remix-practical-guide-course-resources/tree/main/Code/02%20Essentials/08%20Returning%20%26%20Using%20Fetched%20Data/app/components</a>
@@ -76,7 +327,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=3905" target="_blank">3905s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 1 )">1h5m5s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 22 )">1h5m5s</a>
 </div>
 <div class="grid-item-notes">
 	lets first fetch from our notes.json and populate the notes page with our pre-existing notes
@@ -88,7 +339,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=3898" target="_blank">3898s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 2 )">1h4m58s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 23 )">1h4m58s</a>
 </div>
 <div class="grid-item-notes">
 	we could have added validation before serializing the notes.json file
@@ -100,7 +351,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=3861" target="_blank">3861s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 3 )">1h4m21s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 24 )">1h4m21s</a>
 </div>
 <div class="grid-item-notes">
 	so form data has been written to json file on server by the action() function
@@ -112,7 +363,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=3821" target="_blank">3821s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 4 )">1h3m41s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 25 )">1h3m41s</a>
 </div>
 <div class="grid-item-notes">
 	we can redirect user back to same page if you're aggregating notes onto the single page that includes the form
@@ -124,7 +375,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=3773" target="_blank">3773s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 5 )">1h2m53s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 26 )">1h2m53s</a>
 </div>
 <div class="grid-item-notes">
 	redirect user by returning a Response() object from server-side action()
@@ -136,7 +387,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=3729" target="_blank">3729s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 6 )">1h2m9s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 27 )">1h2m9s</a>
 </div>
 <div class="grid-item-notes">
 	after submitting form, then you probably want to redirect user
@@ -148,7 +399,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=3683" target="_blank">3683s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 7 )">1h1m23s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 28 )">1h1m23s</a>
 </div>
 <div class="grid-item-notes">
 	adding new note in action() requires loading json, extracting formdata into json object, concatinating new record to existing list and persisting the json back to disk
@@ -160,7 +411,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=3669" target="_blank">3669s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 8 )">1h1m9s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 29 )">1h1m9s</a>
 </div>
 <div class="grid-item-notes">
 	for demo using iso timestamp as unique record id
@@ -172,7 +423,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=3576" target="_blank">3576s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 9 )">59m36s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 30 )">59m36s</a>
 </div>
 <div class="grid-item-notes">
 	helper function to create json object: const noteData = Object.fromEntries(formData)
@@ -184,7 +435,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=3549" target="_blank">3549s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 10 )">59m9s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 31 )">59m9s</a>
 </div>
 <div class="grid-item-notes">
 	formdata.get("title")
@@ -196,7 +447,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=3482" target="_blank">3482s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 11 )">58m2s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 32 )">58m2s</a>
 </div>
 <div class="grid-item-notes">
 	const formData = await request.formData()
@@ -208,7 +459,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=3414" target="_blank">3414s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 12 )">56m54s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 33 )">56m54s</a>
 </div>
 <div class="grid-item-notes">
 	in the action() function remix gives us access to a function that allows us to extract form data to then insert into our database
@@ -220,7 +471,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=3407" target="_blank">3407s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 13 )">56m47s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 34 )">56m47s</a>
 </div>
 <div class="grid-item-notes">
 	we don't have to have two-way bindings or refs
@@ -232,7 +483,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=3350" target="_blank">3350s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 14 )">55m50s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 35 )">55m50s</a>
 </div>
 <div class="grid-item-notes">
 	how to extract data submitted by form
@@ -244,7 +495,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=3286" target="_blank">3286s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 15 )">54m46s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 36 )">54m46s</a>
 </div>
 <div class="grid-item-notes">
 	we'd normally replace data/notes.js here with database
@@ -256,7 +507,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=3255" target="_blank">3255s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 16 )">54m15s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 37 )">54m15s</a>
 </div>
 <div class="grid-item-notes">
 	app/data folder is convention but folder named "data" is not reserved
@@ -268,7 +519,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=3231" target="_blank">3231s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 17 )">53m51s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 38 )">53m51s</a>
 </div>
 <div class="grid-item-notes">
 	so POST request will trigger the server-side action() function
@@ -280,7 +531,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=3205" target="_blank">3205s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 18 )">53m25s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 39 )">53m25s</a>
 </div>
 <div class="grid-item-notes">
 	action() is triggered whenver a non-GET request is made
@@ -292,7 +543,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=3194" target="_blank">3194s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 19 )">53m14s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 40 )">53m14s</a>
 </div>
 <div class="grid-item-notes">
 	action() code will run only on server and action() function will not be sent to client
@@ -304,7 +555,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=3147" target="_blank">3147s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 20 )">52m27s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 41 )">52m27s</a>
 </div>
 <div class="grid-item-notes">
 	server-side: remix will be looking for action() just as it was looking for links()
@@ -316,7 +567,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=3128" target="_blank">3128s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 21 )">52m8s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 42 )">52m8s</a>
 </div>
 <div class="grid-item-notes">
 	full stack app: fist metion of adding server side code: add the action() function to run on server
@@ -328,7 +579,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=3121" target="_blank">3121s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 22 )">52m1s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 43 )">52m1s</a>
 </div>
 <div class="grid-item-notes">
 	the post request failed because we don't yet have a handler, but we'll have one setup soon enough
@@ -340,7 +591,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=3028" target="_blank">3028s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 23 )">50m28s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 44 )">50m28s</a>
 </div>
 <div class="grid-item-notes">
 	you don't need to specify action="/notes" because by default the form is submitted to the same path of the route
@@ -352,7 +603,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=3000" target="_blank">3000s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 24 )">50m0s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 45 )">50m0s</a>
 </div>
 <div class="grid-item-notes">
 	embrace the default
@@ -364,7 +615,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=2997" target="_blank">2997s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 25 )">49m57s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 46 )">49m57s</a>
 </div>
 <div class="grid-item-notes">
 	introduction to submittng forms
@@ -376,7 +627,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=2925" target="_blank">2925s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 26 )">48m45s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 47 )">48m45s</a>
 </div>
 <div class="grid-item-notes">
 	introduction to full stack
@@ -388,7 +639,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=2903" target="_blank">2903s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 27 )">48m23s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 48 )">48m23s</a>
 </div>
 <div class="grid-item-notes">
 	now we'll learn how to create and submit notes.  this is posting forms
@@ -400,7 +651,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=2844" target="_blank">2844s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 28 )">47m24s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 49 )">47m24s</a>
 </div>
 <div class="grid-item-notes">
 	MainNavigation gets added to root component like this
@@ -412,7 +663,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=2809" target="_blank">2809s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 29 )">46m49s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 50 )">46m49s</a>
 </div>
 <div class="grid-item-notes">
 	demo for how to make main navbar visibile on every page
@@ -424,7 +675,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=2770" target="_blank">2770s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 30 )">46m10s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 51 )">46m10s</a>
 </div>
 <div class="grid-item-notes">
 	NavLink
@@ -436,7 +687,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=2747" target="_blank">2747s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 31 )">45m47s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 52 )">45m47s</a>
 </div>
 <div class="grid-item-notes">
 	components are not standalone, but rather used inside other components
@@ -448,7 +699,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=2734" target="_blank">2734s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 32 )">45m34s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 53 )">45m34s</a>
 </div>
 <div class="grid-item-notes">
 	first mention of adding main navbar
@@ -460,7 +711,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=2721" target="_blank">2721s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 33 )">45m21s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 54 )">45m21s</a>
 </div>
 <div class="grid-item-notes">
 	we're done talking about styles now
@@ -472,7 +723,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=2674" target="_blank">2674s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 34 )">44m34s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 55 )">44m34s</a>
 </div>
 <div class="grid-item-notes">
 	using css modules would help prevent conflict but we're not using css modules here
@@ -484,7 +735,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=2644" target="_blank">2644s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 35 )">44m4s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 56 )">44m4s</a>
 </div>
 <div class="grid-item-notes">
 	careful! component styles will still be global styles and this may cause conflict
@@ -496,7 +747,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=2623" target="_blank">2623s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 36 )">43m43s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 57 )">43m43s</a>
 </div>
 <div class="grid-item-notes">
 	use spread operator to merge links arrays
@@ -508,7 +759,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=2602" target="_blank">2602s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 37 )">43m22s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 58 )">43m22s</a>
 </div>
 <div class="grid-item-notes">
 	surfacing links
@@ -520,7 +771,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=2568" target="_blank">2568s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 38 )">42m48s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 59 )">42m48s</a>
 </div>
 <div class="grid-item-notes">
 	remix won't be looking for links functions that aren't in routes files
@@ -532,7 +783,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=2542" target="_blank">2542s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 39 )">42m22s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 60 )">42m22s</a>
 </div>
 <div class="grid-item-notes">
 	if you choose to import from components, then you need to export links() from there too
@@ -544,7 +795,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=2514" target="_blank">2514s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 40 )">41m54s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 61 )">41m54s</a>
 </div>
 <div class="grid-item-notes">
 	you don't need to add extra css import for newNotes.css
@@ -556,7 +807,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=2483" target="_blank">2483s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 41 )">41m23s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 62 )">41m23s</a>
 </div>
 <div class="grid-item-notes">
 	import newNotes.css styles
@@ -568,7 +819,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=2437" target="_blank">2437s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 42 )">40m37s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 63 )">40m37s</a>
 </div>
 <div class="grid-item-notes">
 	example usage of NewNote non-page component
@@ -580,7 +831,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=2421" target="_blank">2421s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 43 )">40m21s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 64 )">40m21s</a>
 </div>
 <div class="grid-item-notes">
 	~/ gives you quick access to the app folder
@@ -592,7 +843,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=2408" target="_blank">2408s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 44 )">40m8s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 65 )">40m8s</a>
 </div>
 <div class="grid-item-notes">
 	use NewNote component in notes.tsx route
@@ -604,7 +855,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=2384" target="_blank">2384s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 45 )">39m44s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 66 )">39m44s</a>
 </div>
 <div class="grid-item-notes">
 	NewNote component
@@ -616,7 +867,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=2363" target="_blank">2363s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 46 )">39m23s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 67 )">39m23s</a>
 </div>
 <div class="grid-item-notes">
 	components: first mention of components
@@ -628,7 +879,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=2324" target="_blank">2324s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 47 )">38m44s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 68 )">38m44s</a>
 </div>
 <div class="grid-item-notes">
 	one last important aspect of styling
@@ -640,7 +891,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=2243" target="_blank">2243s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 48 )">37m23s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 69 )">37m23s</a>
 </div>
 <div class="grid-item-notes">
 	homestyles
@@ -652,7 +903,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=2241" target="_blank">2241s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 49 )">37m21s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 70 )">37m21s</a>
 </div>
 <div class="grid-item-notes">
 	~/styles/home.css
@@ -664,7 +915,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=2221" target="_blank">2221s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 50 )">37m1s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 71 )">37m1s</a>
 </div>
 <div class="grid-item-notes">
 	
@@ -676,7 +927,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=2197" target="_blank">2197s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 51 )">36m37s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 72 )">36m37s</a>
 </div>
 <div class="grid-item-notes">
 	home.css applies just to index.tsx
@@ -688,7 +939,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=2193" target="_blank">2193s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 52 )">36m33s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 73 )">36m33s</a>
 </div>
 <div class="grid-item-notes">
 	you can export page specific links in specific route files to prevent having to manange global css file
@@ -700,7 +951,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=2168" target="_blank">2168s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 53 )">36m8s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 74 )">36m8s</a>
 </div>
 <div class="grid-item-notes">
 	rel: stylesheet
@@ -712,7 +963,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=2140" target="_blank">2140s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 54 )">35m40s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 75 )">35m40s</a>
 </div>
 <div class="grid-item-notes">
 	main.css import into root.tsx
@@ -724,7 +975,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=1913" target="_blank">1913s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 55 )">31m53s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 76 )">31m53s</a>
 </div>
 <div class="grid-item-notes">
 	example .css file
@@ -736,7 +987,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=1875" target="_blank">1875s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 56 )">31m15s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 77 )">31m15s</a>
 </div>
 <div class="grid-item-notes">
 	main.css contents
@@ -748,7 +999,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=1846" target="_blank">1846s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 57 )">30m46s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 78 )">30m46s</a>
 </div>
 <div class="grid-item-notes">
 	styling: create styles folder
@@ -760,7 +1011,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=1798" target="_blank">1798s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 58 )">29m58s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 79 )">29m58s</a>
 </div>
 <div class="grid-item-notes">
 	styling
@@ -772,7 +1023,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=1782" target="_blank">1782s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 59 )">29m42s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 80 )">29m42s</a>
 </div>
 <div class="grid-item-notes">
 	styling
@@ -784,7 +1035,7 @@
 	<a href="https://www.youtube.com/watch?v=RBYJTop1e-g&amp;t=1769s" target="_blank">1769s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 60 )">29m29s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 81 )">29m29s</a>
 </div>
 <div class="grid-item-notes">
 	export links function to get styles to take hold
@@ -796,7 +1047,7 @@
 	<a href="https://youtu.be/RBYJTop1e-g?t=701" target="_blank">701s</a>
 </div>
 <div class="grid-item-timestamp">
-	<a href="javascript:void(0);" onclick="setCurrentTime( 61 )">11m41s</a>
+	<a href="javascript:void(0);" onclick="setCurrentTime( 82 )">11m41s</a>
 </div>
 <div class="grid-item-notes">
 	create-remix
@@ -805,7 +1056,5 @@
 
 
 </div>
-
 </body>
 </html>
-

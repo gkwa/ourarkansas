@@ -22,6 +22,9 @@ ls .git/
 
 ** resources
 
++ https://dbeaver.io/
++ https://chromewebstore.google.com/detail/tweaks-for-youtube/ogkoifddpkoabehfemkolflcjhklmkge
++ https://inzk.dev/tweaks-for-youtube
 + https://youtu.be/RBYJTop1e-g
 + https://github.com/academind/remix-practical-guide-course-resources/tree/main/Code/02%20Essentials
 + https://remix.run/docs/en/main/styling/css#surfacing-styles

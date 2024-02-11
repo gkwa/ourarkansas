@@ -5,7 +5,7 @@ package cmd
 
 import (
 	"github.com/spf13/cobra"
-	"github.com/taylormonacelli/ourarkansas/test1"
+	"github.com/taylormonacelli/ourarkansas/listen"
 )
 
 // exportCmd represents the export command
@@ -19,7 +19,11 @@ Cobra is a CLI library for Go that empowers applications.
 This application is a tool to generate the needed files
 to quickly create a Cobra application.`,
 	Run: func(cmd *cobra.Command, args []string) {
-		test1.RunExport()
+		listen.RunExport()
+		err := listen.RunExportToSQL()
+		if err != nil {
+			panic(err)
+		}
 	},
 }
 

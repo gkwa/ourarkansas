@@ -7,7 +7,7 @@ import (
 	"regexp"
 	"time"
 
-	"github.com/taylormonacelli/ourarkansas/test1"
+	"github.com/taylormonacelli/ourarkansas/listen"
 )
 
 type Timestamp struct {
@@ -16,7 +16,7 @@ type Timestamp struct {
 	Time    int
 }
 
-func GenerateVideoHTMLPage(records []test1.ClipboardEntry) error {
+func GenerateHTMLPage(records []listen.ClipboardEntry) error {
 	tmplSrc := `
 <!DOCTYPE html>
 
@@ -37,19 +37,18 @@ https://wickydesign.com/how-to-add-timestamps-to-embedded-youtube-videos/
 
 	.grid-container {
         display: grid;
-        grid-template-columns: 60px 70px auto; 
-        /* gap: 1px; */
-		
+        grid-template-columns: 60px 90px auto;
     }
 
     .grid-item {
-        /* background-color: #f0f0f0; */
-        /* border: 1px solid #ccc; */
         padding: 0px;
     }
 
 	.grid-item-seconds { text-align: right; }
-	.grid-item-timestamp { text-align: right; }
+	.grid-item-timestamp {
+		text-align: right;
+		padding-left: 1ch;
+	}
 	.grid-item-notes {
 		text-align: left;
 		padding-left: 1ch;
@@ -94,16 +93,14 @@ https://wickydesign.com/how-to-add-timestamps-to-embedded-youtube-videos/
 {{end}}
 
 </div>
-
 </body>
 </html>
-
 `
 
 	funcMap := template.FuncMap{
-		"formatSeconds":        formatSeconds,
-		"formatSeconds2":       formatSeconds2,
-		"wrapURLs": wrapURLs,
+		"formatSeconds":  formatSeconds,
+		"formatSeconds2": formatSeconds2,
+		"wrapURLs":       wrapURLs,
 	}
 
 	tmpl, err := template.New("timestampTemplate").Funcs(funcMap).Parse(tmplSrc)
@@ -119,7 +116,7 @@ https://wickydesign.com/how-to-add-timestamps-to-embedded-youtube-videos/
 
 	// Pass the VideoID directly to the template
 	data := struct {
-		Records []test1.ClipboardEntry
+		Records []listen.ClipboardEntry
 		VideoID string
 	}{
 		Records: records,
@@ -135,13 +132,13 @@ https://wickydesign.com/how-to-add-timestamps-to-embedded-youtube-videos/
 }
 
 func RunReport1() {
-	entries, err := test1.ClipboardEntriesReverseByTimestamp()
+	entries, err := listen.ClipboardEntriesReverseByTimestamp()
 	if err != nil {
 		fmt.Println(err)
 		return
 	}
 
-	err = GenerateVideoHTMLPage(entries)
+	err = GenerateHTMLPage(entries)
 	if err != nil {
 		fmt.Println(err)
 		return

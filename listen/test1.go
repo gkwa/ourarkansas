@@ -1,4 +1,4 @@
-package test1
+package listen
 
 import (
 	"fmt"
@@ -13,7 +13,7 @@ import (
 	"gorm.io/gorm"
 )
 
-func RunTest1() {
+func GetIncomingLinks() {
 	startTime := time.Now()
 
 	db, err := gorm.Open(sqlite.Open("clipboard.db"), &gorm.Config{})
@@ -69,10 +69,11 @@ func RunTest1() {
 				continue
 			}
 
+			now := time.Now()
 			entry := ClipboardEntry{
 				Content:   content,
-				CreatedAt: time.Now(),
-				UpdatedAt: time.Now(),
+				CreatedAt: now,
+				UpdatedAt: now,
 				Timestamp: result.TimestampSeconds,
 				VideoID:   result.VideoID,
 			}
